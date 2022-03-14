@@ -1,11 +1,11 @@
 {
-  "name": "chit_chats",
+  "name": "not_discord",
   "version": "1.0.0",
   "description": "realtime chatting app with different rooms",
   "main": "server.js",
   "scripts": {
-    "start": "node ./backend/server.js",
-    "dev": "nodemon server ./backend/server.js"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "repository": {
     "type": "git",
