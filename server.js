@@ -16,7 +16,7 @@ roomMap.set("Cars", "🚗Vroom Vroom");
 roomMap.set("Chitchat", "💩Talking");
 
 // Set static folder
-app.use(express.static(path.join(__dirname, "../public")));
+app.use(express.static(path.join(__dirname, "./public")));
 
 // Run when client connects
 io.on("connection", socket => {
