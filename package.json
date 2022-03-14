@@ -4,7 +4,7 @@
   "description": "realtime chatting app with different rooms",
   "main": "server.js",
   "scripts": {
-    "start": "node server ./backend/server.js",
+    "start": "node ./backend/server.js",
     "dev": "nodemon server ./backend/server.js"
   },
   "repository": {
@@ -24,5 +24,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
