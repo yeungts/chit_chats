@@ -179,6 +179,26 @@ input[type='text'] {
 	flex: 1;
 }
 
+#leave-prompt-wrapper {
+	align-items: center;
+	position: absolute;
+	background-color: rgba(17, 17, 19, 0.781);
+	top: 0; 
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 5;
+}
+
+.leave-prompt {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+}
+
 /* Index Page */
 .index-container {
 	flex: 1;

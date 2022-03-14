@@ -1,6 +1,9 @@
 const messageInput = document.getElementById("message-input");
+const leavePrompt = document.getElementById("leave-prompt-wrapper");
 const chatbox = document.querySelector(".chatbox");
 const userList = document.querySelector("#users");
+
+displayLeavePrompt(false);
 
 // get information from url
 const { username, room } = Qs.parse(location.search, {
@@ -63,6 +66,14 @@ messageInput.addEventListener('submit', (e) => {
     e.target.elements.msg.value = "";
     e.target.elements.msg.focus();
 });
+
+function displayLeavePrompt(condition) {
+    if (condition) {
+        leavePrompt.style.display = "flex";
+    } else {
+        leavePrompt.style.display = "none";
+    }
+}
 
 function welcome(message) {
     const newMessage = document.createElement("div");
