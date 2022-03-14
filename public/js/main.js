@@ -39,8 +39,9 @@ socket.on("message", message => {
             break;
     }
     
-    updateUserList(message.users);
-    
+    if (message.users) {
+        updateUserList(message.users);
+    }
     // Scroll the chatbox to the bottom
     chatbox.scrollTop = chatbox.scrollHeight;
 });
