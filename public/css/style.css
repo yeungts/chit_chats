@@ -124,43 +124,47 @@ input[type='text'] {
 	padding: 10px 0;
 }
 
-.chat-messages {
+.chatbox {
 	padding: 30px;
 	overflow-y: scroll;
     background-color: var(--background-color-c);
 }
 
-.chat-messages .message {
+.chatbox .message {
     color: var(--light-color);
 	padding: 10px;
 	margin-bottom: 15px;
 	border-radius: 5px;
 }
 
-.chat-messages .message .meta {
+.chatbox .message:hover {
+	background-color: #464646;
+}
+
+.chatbox .message .meta {
 	font-size: 18px;
 	font-weight: bold;
 	color: #fff;
 	margin-bottom: 7px;
 }
 
-.chat-messages .message .meta span {
+.chatbox .message .meta span {
 	font-weight: 100;
 	color: rgb(155, 155, 155);
     padding-left: 20px;
 	font-size: 14px;
 }
 
-.chat-form-container {
+.message-input-container {
 	padding: 20px 30px;
 	background-color: var(--background-color-a);
 }
 
-.chat-form-container form {
+.message-input-container form {
 	display: flex;
 }
 
-.chat-form-container input[type='text'] {
+.message-input-container input[type='text'] {
 	flex: 1;
 }
 
