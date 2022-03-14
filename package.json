@@ -1,0 +1,28 @@
+{
+  "name": "chit_chats",
+  "version": "1.0.0",
+  "description": "realtime chatting app with different rooms",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server ./backend/server.js",
+    "dev": "nodemon server ./backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeungts/chit_chats.git"
+  },
+  "author": "Kendrick Yeung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeungts/chit_chats/issues"
+  },
+  "homepage": "https://github.com/yeungts/chit_chats#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "moment": "^2.29.1",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
