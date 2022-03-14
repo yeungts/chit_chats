@@ -27,7 +27,7 @@ io.on("connection", socket => {
         // Welcome user entered
         socket.emit("message", {
             messageType: "WELCOME",
-            content: `Welcome to ${roomMap.get(room)} of Chit Chats!`,
+            content: `Welcome to ${roomMap.get(room)} of NOT-Discord!`,
             users: getUsersOfRoom(user.room)});
 
             
